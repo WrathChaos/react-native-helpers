@@ -1,8 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Dimensions, Text, View } from "react-native";
 import { Card, Container } from "react-native-card-collection";
 import {
-  Screen,
   ScreenWidth,
   ScreenHeight,
   isIOS,
@@ -16,6 +15,8 @@ import {
   getStatusBarHeight,
   normalizeText
 } from "@freakycoder/react-native-helpers";
+
+const dim = Dimensions.get("window");
 
 export default class App extends React.Component {
   renderDeviceInfoContainers() {
@@ -37,7 +38,7 @@ export default class App extends React.Component {
         />
         <Container
           title="isIPhoneXsMax?"
-          subtitle={isIPhoneXsMax(Screen) ? "iPhone XsMax" : "NOT iPhone XsMax"}
+          subtitle={isIPhoneXsMax(dim) ? "iPhone XsMax" : "NOT iPhone XsMax"}
         />
         <Container
           title="getStatusBarHeight?"
