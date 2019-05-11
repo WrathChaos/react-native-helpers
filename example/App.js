@@ -6,20 +6,16 @@ import {
   ScreenWidth,
   ScreenHeight,
   isIOS,
-  isAndroid
-} from "./lib/src/helpers/device/DeviceInfo";
-
-import {
+  isAndroid,
   isIPhoneXFamily,
   hasNotch,
   isIPhoneX,
   isIPhoneXr,
   isIPhoneXs,
   isIPhoneXsMax,
-  getStatusBarHeight
-} from "./lib/src/helpers/notch/Notch";
-
-import normalizeText from "./lib/src/helpers/normalize/normalizeText";
+  getStatusBarHeight,
+  normalizeText
+} from "@freakycoder/react-native-helpers";
 
 export default class App extends React.Component {
   renderDeviceInfoContainers() {
