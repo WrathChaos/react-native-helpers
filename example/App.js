@@ -54,7 +54,7 @@ export default class App extends React.Component {
         <Text style={styles.titleStyle}>React Native Helpers</Text>
         <Card>{this.renderDeviceInfoContainers()}</Card>
         <View style={{ marginTop: 24 }}>
-          <Card headerText="Noth Information">
+          <Card headerText="Notch Information">
             {this.renderNotchContainers()}
           </Card>
         </View>
