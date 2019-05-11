@@ -77,12 +77,21 @@ import {
 </View>
 ```
 
+## Normalize Text Usage
+Method to normalize size of fonts across devices
 
 ```js
 import normalizeText from "./lib/src/helpers/normalize/normalizeText";
 
 fontSize: normalizeText(24),
 ```
+
+
+## Credits
+
+<b>NormalizeText</b> is completely coming from <b>react-native-elements</b>. All credits goes to <b>@xiaoneng</b> and RN Elements team. Thank you so much guys. 
+
+
 
 ### ToDos
 
