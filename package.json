@@ -1,0 +1,37 @@
+{
+  "name": "@freakycoder/react-native-helpers",
+  "version": "0.0.1",
+  "description": "Easy to use & awesome helpers for React Native.",
+  "keywords": [
+    "ios",
+    "width",
+    "notch",
+    "screen",
+    "helper",
+    "height",
+    "iPhoneX",
+    "android",
+    "helpers",
+    "normalize",
+    "normalizeText",
+    "FreakyCoder",
+    "freakycoder",
+    "kuray",
+    "Kuray",
+    "react",
+    "react-native",
+    "javascript",
+    "ui-lib",
+    "rn"
+  ],
+  "homepage": "https://www.freakycoder.com",
+  "bugs": "https://github.com/WrathChaos/react-native-helpers/issues",
+  "main": "./lib/src/index.js",
+  "repository": "git@github.com:WrathChaos/react-native-helpers.git",
+  "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">= 16.x.x",
+    "react-native": ">= 0.55.x"
+  }
+}
