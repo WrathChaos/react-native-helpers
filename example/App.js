@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { Card, Container } from "react-native-card-collection";
 import {
   Screen,
   ScreenWidth,
@@ -19,9 +20,6 @@ import {
 } from "./lib/src/helpers/notch/Notch";
 
 import normalizeText from "./lib/src/helpers/normalize/normalizeText";
-
-import Card from "./src/components/Card/Card";
-import Container from "./src/components/Card/components/Container/Container";
 
 export default class App extends React.Component {
   renderDeviceInfoContainers() {
@@ -76,8 +74,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   },
   titleStyle: {
-    paddingBottom: 36,
+    fontSize: 24,
     fontWeight: "700",
-    fontSize: normalizeText(24)
+    paddingBottom: normalizeText(24)
   }
 });
