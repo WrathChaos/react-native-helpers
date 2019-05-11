@@ -1,4 +1,4 @@
-<img alt="React Native Helpers" src="https://github.com/WrathChaos/@freakycoder/react-native-helpers/blob/master/assets/logo.png" width="1050"/>
+<img alt="React Native Helpers" src="https://github.com/WrathChaos/react-native-helpers/blob/master/assets/logo.png" width="1050"/>
 
 Easy to use & awesome helpers for React Native.
 
@@ -9,7 +9,7 @@ Easy to use & awesome helpers for React Native.
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 <p align="center">
-<img alt="React Native Helpers" src="https://github.com/WrathChaos/@freakycoder/react-native-helpers/blob/master/assets/Screenshots/example.png" width="49.7%" />
+<img alt="React Native Helpers" src="https://github.com/WrathChaos/react-native-helpers/blob/master/assets/Screenshots/example.png" width="49.7%" />
 </p>
 
 ## Installation
