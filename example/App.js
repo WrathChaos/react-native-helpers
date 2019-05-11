@@ -74,8 +74,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   },
   titleStyle: {
-    fontSize: 24,
+    fontSize: normalizeText(24),
     fontWeight: "700",
-    paddingBottom: normalizeText(24)
+    paddingBottom: 36
   }
 });
