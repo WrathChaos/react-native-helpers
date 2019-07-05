@@ -20,6 +20,9 @@ Add the dependency:
 
 ```ruby
 npm i @freakycoder/react-native-helpers
+
+// Expo Version
+"@freakycoder/react-native-helpers": "WrathChaos/@freakycoder/react-native-helpers#expo"
 ```
 
 
