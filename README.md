@@ -30,6 +30,7 @@ npm i @freakycoder/react-native-helpers
 ```
 "react": ">= 16.x.x",
 "react-native": ">= 0.55.x",
+"@react-native-community/status-bar": "^1.x.x"
 ```
 
 ## DeviceInfo Usage

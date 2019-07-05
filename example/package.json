@@ -7,7 +7,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@freakycoder/react-native-helpers": "0.0.12",
+    "@freakycoder/react-native-helpers": "0.0.2",
+    "@react-native-community/status-bar": "^1.0.3",
     "expo": "^32.0.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
