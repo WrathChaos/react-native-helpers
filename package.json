@@ -1,6 +1,6 @@
 {
   "name": "@freakycoder/react-native-helpers",
-  "version": "0.0.21",
+  "version": "0.1.0",
   "description": "Easy to use & awesome helpers for React Native.",
   "keywords": [
     "ios",
@@ -26,7 +26,7 @@
   ],
   "homepage": "https://www.freakycoder.com",
   "bugs": "https://github.com/WrathChaos/react-native-helpers/issues",
-  "main": "./lib/src/helpers.js",
+  "main": "./lib/src/index.js",
   "repository": "git@github.com:WrathChaos/react-native-helpers.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
