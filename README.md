@@ -1,13 +1,15 @@
 <img alt="React Native Helpers" src="https://github.com/WrathChaos/react-native-helpers/blob/master/assets/logo.png" width="1050"/>
 
-Easy to use & awesome helpers for React Native.
+[![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-library-boilerplate)
 
-[![npm version](https://img.shields.io/npm/v/@freakycoder/react-native-helpers.svg)](https://www.npmjs.com/package/@freakycoder/react-native-helpers)
-[![npm](https://img.shields.io/npm/dt/@freakycoder/react-native-helpers.svg)](https://www.npmjs.com/package/@freakycoder/react-native-helpers)
+[![Easy to use & awesome helpers for React Native.](https://img.shields.io/badge/-Easy%20to%20use%20%26%20awesome%20helpers%20for%20React%20Native.-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/react-native-library-boilerplate)
+
+[![npm version](https://img.shields.io/npm/v/@freakycoder/react-native-helpers.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-helpers)
+[![npm](https://img.shields.io/npm/dt/@freakycoder/react-native-helpers.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-helpers)
 ![expo-compatible](https://img.shields.io/badge/Expo-compatible-9cf.svg)
-![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
 <p align="center">
 <img alt="React Native Helpers" src="https://github.com/WrathChaos/react-native-helpers/blob/master/assets/Screenshots/example.png" width="49.7%" />
@@ -53,7 +55,7 @@ import {
 </View>;
 ```
 
-## Noth (iPhoneX & StatusBar) Usage
+## Notch (iPhoneX & StatusBar) Usage
 
 ```js
 import {
@@ -93,7 +95,7 @@ fontSize: normalizeText(24),
 
 <b>NormalizeText</b> is completely coming from <b>react-native-elements</b>. All credits goes to <b>@xiaoneng</b> and RN Elements team. Thank you so much guys.
 
-### ToDos
+### Roadmap
 
 - [x] LICENSE
 - [ ] Write an article about the lib on Medium
