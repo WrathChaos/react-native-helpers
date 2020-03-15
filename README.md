@@ -18,12 +18,15 @@
 
 Add the dependency:
 
-### React Native:
+### React Native
 
 ```ruby
 npm i @freakycoder/react-native-helpers
+```
 
-// Expo Version
+### Expo Version
+
+```ruby
 "@freakycoder/react-native-helpers": "WrathChaos/@freakycoder/react-native-helpers#expo"
 ```
 
@@ -45,7 +48,7 @@ import {
   ScreenHeight,
   isIOS,
   isAndroid
-} from "react-native-helpers";
+} from "@freakycoder/react-native-helpers";
 
 <View>
   <Container title="Device OS" subtitle={isIOS ? "iOS" : "Android"} />
@@ -65,7 +68,7 @@ import {
   isIPhoneXs,
   isIPhoneXsMax,
   getStatusBarHeight
-} from "react-native-helpers";
+} from "@freakycoder/react-native-helpers";
 
 <View>
   <Container
@@ -85,9 +88,25 @@ import {
 Method to normalize size of fonts across devices
 
 ```js
-import normalizeText from "./lib/src/helpers/normalize/normalizeText";
+import { normalizeText } from "@freakycoder/react-native-helpers";
 
 fontSize: normalizeText(24),
+```
+
+## Native Number Format Usage
+
+Method to format the number of your texted number. You can change each options.
+
+```js
+import { numberFormat } from "@freakycoder/react-native-helpers";
+
+<Text>{numberFormat(50319341)</Text> // Output: 50.319.341
+<Text>
+  {numberFormat(1093495, "en", {
+    style: "currency",
+    currency: "GBP"
+  })}
+</Text>// Output: £ 50.319.341
 ```
 
 ## Credits

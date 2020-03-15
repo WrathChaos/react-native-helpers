@@ -12,6 +12,7 @@ import {
   isIPhoneXr,
   isIPhoneXs,
   isIPhoneXsMax,
+  numberFormat,
   getStatusBarHeight,
   normalizeText
 } from "@freakycoder/react-native-helpers";
@@ -58,6 +59,42 @@ export default class App extends React.Component {
             {this.renderNotchContainers()}
           </Card>
         </View>
+        <View style={{ marginTop: 24 }}>
+          <Card headerText="NumberFormat">
+            <Container
+              title="Default"
+              subtitle={
+                <Text style={{ textAlign: "center" }}>
+                  {numberFormat(1093495)}
+                </Text>
+              }
+            />
+            <Container
+              title="GBP"
+              subtitle={
+                <Text style={{ textAlign: "center" }}>
+                  GBP:{" "}
+                  {numberFormat(1093495, "en", {
+                    style: "currency",
+                    currency: "GBP"
+                  })}
+                </Text>
+              }
+            />
+            <Container
+              title="JPY"
+              subtitle={
+                <Text style={{ textAlign: "center" }}>
+                  JPY:{" "}
+                  {numberFormat(50494134, "ja", {
+                    style: "currency",
+                    currency: "JPY"
+                  })}
+                </Text>
+              }
+            />
+          </Card>
+        </View>
       </View>
     );
   }
@@ -66,12 +103,12 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    top: "15%",
+    marginTop: "15%",
     alignItems: "center",
     backgroundColor: "#fff"
   },
   titleStyle: {
-    fontSize: normalizeText(24),
+    fontSize: normalizeText(30),
     fontWeight: "700",
     paddingBottom: 36
   }
