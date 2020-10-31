@@ -14,7 +14,7 @@ const pixelRatio = PixelRatio.get();
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
-// -- Testing Only --
+// ? -- Testing Only --
 // const fontScale = PixelRatio.getFontScale();
 // const layoutSize = PixelRatio.getPixelSizeForLayoutSize(14);
 // console.log('normalizeText getPR ->', pixelRatio);
@@ -23,23 +23,23 @@ const deviceWidth = Dimensions.get("window").width;
 // console.log('normalizeText getDW ->', deviceWidth);
 // console.log('normalizeText getPSFLS ->', layoutSize);
 
-const normalize = size => {
+const normalize = (size: number) => {
   if (pixelRatio >= 2 && pixelRatio < 3) {
-    // iphone 5s and older Androids
+    // iPhone 5s and older Androids
     if (deviceWidth < 360) {
       return size * 0.95;
     }
 
-    // iphone 5
+    // iPhone 5
     if (deviceHeight < 667) {
       return size;
-      // iphone 6-6s
     }
 
+    // iPhone 6-6s
     if (deviceHeight >= 667 && deviceHeight <= 735) {
       return size * 1.15;
     }
-    // older phablets
+    // Older Phablets
     return size * 1.25;
   }
 
@@ -62,7 +62,7 @@ const normalize = size => {
     }
 
     // catch larger devices
-    // ie iphone 6s plus / 7 plus / mi note 等等
+    // ie iPhone 6s plus / 7 plus / mi note 等等
     return size * 1.27;
   }
 
@@ -84,7 +84,7 @@ const normalize = size => {
       return size * 1.25;
     }
 
-    // catch larger phablet devices
+    // catch larger Phablet devices
     return size * 1.4;
   }
 
