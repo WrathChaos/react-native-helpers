@@ -1,8 +1,8 @@
-<img alt="React Native Helpers" src="https://github.com/WrathChaos/react-native-helpers/blob/master/assets/logo.png" width="1050"/>
+<img alt="React Native Helpers" src="assets/logo.png" width="1050"/>
 
 [![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-helpers)
 
-[![All helpers in one; iPhone series support, dimensions helper, hasNotch helper, normalize text helper and text helpers for React Native with very easy use](https://img.shields.io/badge/-All%20helpers%20in%20one%3B%20iPhone%20series%20support%2C%20dimensions%20helper%2C%20hasNotch%20helper%2C%20normalize%20text%20helper%20and%20text%20helpers%20for%20React%20Native%20with%20very%20easy%20use-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-helpers)
+<b><i>All helpers in one; iPhone series support, dimensions helper, hasNotch helper, normalize text helper and text helpers for React Native with very easy use</i></b>
 
 [![npm version](https://img.shields.io/npm/v/@freakycoder/react-native-helpers.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-helpers)
 [![npm](https://img.shields.io/npm/dt/@freakycoder/react-native-helpers.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-helpers)
