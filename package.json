@@ -1,7 +1,7 @@
 {
   "name": "@freakycoder/react-native-helpers",
   "version": "1.0.0",
-  "description": "Easy to use & awesome helpers for React Native.",
+  "description": "All helpers in one; iPhone series support, dimensions helper, hasNotch helper, normalize text helper and text helpers for React Native with very easy use",
   "keywords": [
     "ios",
     "width",

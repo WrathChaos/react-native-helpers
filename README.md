@@ -2,7 +2,7 @@
 
 [![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-helpers)
 
-[![Easy to use & awesome helpers for React Native.](https://img.shields.io/badge/-Easy%20to%20use%20%26%20awesome%20helpers%20for%20React%20Native.-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/react-native-helpers)
+[![All helpers in one; iPhone series support, dimensions helper, hasNotch helper, normalize text helper and text helpers for React Native with very easy use](https://img.shields.io/badge/-All%20helpers%20in%20one%3B%20iPhone%20series%20support%2C%20dimensions%20helper%2C%20hasNotch%20helper%2C%20normalize%20text%20helper%20and%20text%20helpers%20for%20React%20Native%20with%20very%20easy%20use-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-helpers)
 
 [![npm version](https://img.shields.io/npm/v/@freakycoder/react-native-helpers.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-helpers)
 [![npm](https://img.shields.io/npm/dt/@freakycoder/react-native-helpers.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-helpers)
@@ -20,34 +20,29 @@ Add the dependency:
 
 ### React Native
 
-```ruby
+```bash
 npm i @freakycoder/react-native-helpers
 ```
 
 ### Expo Version
 
-```ruby
+```bash
 "@freakycoder/react-native-helpers": "WrathChaos/@freakycoder/react-native-helpers#expo"
 ```
 
 ## Peer Dependencies
 
-###### IMPORTANT! You need install them.
-
-```
-"react": ">= 16.x.x",
-"react-native": ">= 0.55.x",
-```
+<b><i>Zero Dependency</i></b>
 
 ## DeviceInfo Usage
 
-```js
+```jsx
 import {
   Screen,
   ScreenWidth,
   ScreenHeight,
   isIOS,
-  isAndroid
+  isAndroid,
 } from "@freakycoder/react-native-helpers";
 
 <View>
@@ -57,17 +52,21 @@ import {
 </View>;
 ```
 
-## Notch (iPhoneX & StatusBar) Usage
+## Notch (iPhoneX & iPhone 11 & iPhone 12 & iPhone SE & StatusBar) Usage
 
 ```js
 import {
-  isIPhoneXFamily,
+  isIPhoneNotchFamily,
+  isIPhone11,
+  isIPhone12,
+  isIPhone12Mini,
+  isIPhone12ProMax,
   hasNotch,
   isIPhoneX,
   isIPhoneXr,
   isIPhoneXs,
   isIPhoneXsMax,
-  getStatusBarHeight
+  getStatusBarHeight,
 } from "@freakycoder/react-native-helpers";
 
 <View>
@@ -109,13 +108,61 @@ import { numberFormat } from "@freakycoder/react-native-helpers";
 </Text>// Output: £ 50.319.341
 ```
 
-## Credits
+# Configuration - Props
 
-<b>NormalizeText</b> is completely coming from <b>react-native-elements</b>. All credits goes to <b>@xiaoneng</b> and RN Elements team. Thank you so much guys.
+## DeviceInfo Props
+
+| Property        |  Type   | Description                                                                                |
+| --------------- | :-----: | ------------------------------------------------------------------------------------------ |
+| isIOS           | boolean | returns if it is an iOS device or not                                                      |
+| isAndroid       | boolean | returns if it is an Android device or not                                                  |
+| ScreenWidth     | number  | get the device's screen width                                                              |
+| ScreenHeight    | number  | get the device's screen height                                                             |
+| ScreenScale     | number  | get the device's screen scale ratio                                                        |
+| ScreenFontScale | number  | get the device's screen font scale ratio (depends on the user's device font scale setting) |
+| WindowWidth     | number  | get the device's window width                                                              |
+| WindowHeight    | number  | get the device's window height                                                             |
+| WindowScale     | number  | get the device's window scale ratio                                                        |
+| WindowFontScale | number  | get the device's window font scale ratio (depends on the user's device font scale setting) |
+| PlatformVersion | number  | returns the platform version                                                               |
+
+## DeviceInfo Props
+
+| Property            |     Type      | Description                                                                |
+| ------------------- | :-----------: | -------------------------------------------------------------------------- |
+| hasNotch            |   function    | returns if the device has notch or not                                     |
+| isIPhoneNotchFamily |   function    | returns if it the iPhone has in the notch family (iPhone X, 11, 12 Series) |
+| isIPhoneSE          | function(dim) | returns if device is iPhone SE or not                                      |
+| isIPhoneX           | function(dim) | returns if device is iPhone X or not                                       |
+| isIPhoneXr          | function(dim) | returns if device is iPhone Xr or not                                      |
+| isIPhoneXs          | function(dim) | returns if device is iPhone Xs or not                                      |
+| isIPhoneXsMax       | function(dim) | returns if device is iPhone Xs Max or not                                  |
+| isIPhone11          | function(dim) | returns if device is iPhone 11 or not                                      |
+| isIPhone11Pro       | function(dim) | returns if device is iPhone 11 Pro or not                                  |
+| isIPhone11ProMax    | function(dim) | returns if device is iPhone 11 Pro Max or not                              |
+| isIPhone12          | function(dim) | returns if device is iPhone 12 or not                                      |
+| isIPhone12Pro       | function(dim) | returns if device is iPhone 12 Pro or not                                  |
+| isIPhone12ProMax    | function(dim) | returns if device is iPhone 12 Pro Max or not                              |
+| isIPhone12Mini      | function(dim) | returns if device is iPhone 12 Mini or not                                 |
+
+## Normalize Text Props
+
+| Property  |       Type       | Description                      |
+| --------- | :--------------: | -------------------------------- |
+| normalize | function(number) | returns the normalized font size |
+
+## Custom Text Props
+
+| Property     |               Type               | Description                                                 |
+| ------------ | :------------------------------: | ----------------------------------------------------------- |
+| numberFormat | function(value, locale, options) | returns the number formatted font with its given parameters |
 
 ### Roadmap
 
-- [x] LICENSE
+- [x] ~~LICENSE~~
+- [x] ~~Typescript~~
+- [x] ~~iPhone Series Support~~
+- [ ] More custom text helpers
 - [ ] Write an article about the lib on Medium
 
 ## Author
