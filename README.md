@@ -122,22 +122,23 @@ import { numberFormat } from "@freakycoder/react-native-helpers";
 
 ## DeviceInfo Props
 
-| Property            |     Type      | Description                                                                |
-| ------------------- | :-----------: | -------------------------------------------------------------------------- |
-| hasNotch            |   function    | returns if the device has notch or not                                     |
-| isIPhoneNotchFamily |   function    | returns if it the iPhone has in the notch family (iPhone X, 11, 12 Series) |
-| isIPhoneSE          | function(dim) | returns if device is iPhone SE or not                                      |
-| isIPhoneX           | function(dim) | returns if device is iPhone X or not                                       |
-| isIPhoneXr          | function(dim) | returns if device is iPhone Xr or not                                      |
-| isIPhoneXs          | function(dim) | returns if device is iPhone Xs or not                                      |
-| isIPhoneXsMax       | function(dim) | returns if device is iPhone Xs Max or not                                  |
-| isIPhone11          | function(dim) | returns if device is iPhone 11 or not                                      |
-| isIPhone11Pro       | function(dim) | returns if device is iPhone 11 Pro or not                                  |
-| isIPhone11ProMax    | function(dim) | returns if device is iPhone 11 Pro Max or not                              |
-| isIPhone12          | function(dim) | returns if device is iPhone 12 or not                                      |
-| isIPhone12Pro       | function(dim) | returns if device is iPhone 12 Pro or not                                  |
-| isIPhone12ProMax    | function(dim) | returns if device is iPhone 12 Pro Max or not                              |
-| isIPhone12Mini      | function(dim) | returns if device is iPhone 12 Mini or not                                 |
+| Property            |     Type      | Description                                                                                         |
+| ------------------- | :-----------: | --------------------------------------------------------------------------------------------------- |
+| hasNotch            |   function    | returns if the device has notch or not                                                              |
+| isIPhoneNotchFamily |   function    | returns if it the iPhone has in the notch family (iPhone X, 11, 12 Series)                          |
+| isIPhoneXFamily     |   function    | returns if it the iPhone has in the notch family (iPhone X, 11, 12 Series) (Backward compatibility) |
+| isIPhoneSE          | function(dim) | returns if device is iPhone SE or not                                                               |
+| isIPhoneX           | function(dim) | returns if device is iPhone X or not                                                                |
+| isIPhoneXr          | function(dim) | returns if device is iPhone Xr or not                                                               |
+| isIPhoneXs          | function(dim) | returns if device is iPhone Xs or not                                                               |
+| isIPhoneXsMax       | function(dim) | returns if device is iPhone Xs Max or not                                                           |
+| isIPhone11          | function(dim) | returns if device is iPhone 11 or not                                                               |
+| isIPhone11Pro       | function(dim) | returns if device is iPhone 11 Pro or not                                                           |
+| isIPhone11ProMax    | function(dim) | returns if device is iPhone 11 Pro Max or not                                                       |
+| isIPhone12          | function(dim) | returns if device is iPhone 12 or not                                                               |
+| isIPhone12Pro       | function(dim) | returns if device is iPhone 12 Pro or not                                                           |
+| isIPhone12ProMax    | function(dim) | returns if device is iPhone 12 Pro Max or not                                                       |
+| isIPhone12Mini      | function(dim) | returns if device is iPhone 12 Mini or not                                                          |
 
 ## Normalize Text Props
 

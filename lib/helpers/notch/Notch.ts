@@ -37,6 +37,10 @@ const isIPhoneNotchFamily = () => {
   return detection();
 };
 
+const isIPhoneXFamily = () => {
+  return detection();
+};
+
 const hasNotch = () => {
   return detection();
 };
@@ -89,6 +93,7 @@ export {
   getStatusBarHeight,
   hasNotch,
   isIPhoneNotchFamily,
+  isIPhoneXFamily,
   isIPhoneSE,
   isIPhoneX,
   isIPhoneXr,

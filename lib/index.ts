@@ -14,6 +14,7 @@ import {
 
 import {
   isIPhoneNotchFamily,
+  isIPhoneXFamily,
   hasNotch,
   isIPhoneX,
   isIPhoneXr,
@@ -48,6 +49,7 @@ export {
   getStatusBarHeight,
   hasNotch,
   isIPhoneNotchFamily,
+  isIPhoneXFamily,
   isIPhoneSE,
   isIPhoneX,
   isIPhoneXr,
