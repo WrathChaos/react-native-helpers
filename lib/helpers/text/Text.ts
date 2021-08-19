@@ -1,5 +1,5 @@
 export const numberFormat = (
   value: any,
-  locale: string = "tr-TR",
+  locale: string = "en-GB",
   options: any = {},
 ) => new Intl.NumberFormat(locale, options).format(value);

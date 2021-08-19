@@ -1,4 +1,5 @@
 import { Dimensions, ScaledSize, Platform, StatusBar } from "react-native";
+const DEFAULT_STATUSBAR_HEIGHT = 30;
 // ? iPhone X Family
 // iPhone X Dimension
 const iPhoneX_HEIGHT = 812;
@@ -33,15 +34,15 @@ const iPhone12Mini_HEIGHT = 812;
  * hasNotch is more accurate name
  */
 
-const isIPhoneNotchFamily = () => {
+const isIPhoneNotchFamily = (): boolean => {
   return detection();
 };
 
-const isIPhoneXFamily = () => {
+const isIPhoneXFamily = (): boolean => {
   return detection();
 };
 
-const hasNotch = () => {
+const hasNotch = (): boolean => {
   return detection();
 };
 
@@ -63,7 +64,7 @@ const isIPhone12ProMax = (dim: ScaledSize) =>
   dim.height === iPhone12ProMax_HEIGHT;
 const isIPhone12Mini = (dim: ScaledSize) => dim.height === iPhone12Mini_HEIGHT;
 
-const detection = () => {
+const detection = (): boolean => {
   const dim = Dimensions.get("window");
   return (
     Platform.OS === "ios" &&
@@ -82,11 +83,13 @@ const detection = () => {
   );
 };
 
-const getStatusBarHeight = () => {
-  return Platform.select({
-    ios: hasNotch() ? 44 : 30,
-    android: StatusBar.currentHeight,
-  });
+const getStatusBarHeight = (): number => {
+  return (
+    Platform.select({
+      ios: hasNotch() ? 44 : DEFAULT_STATUSBAR_HEIGHT,
+      android: StatusBar.currentHeight || DEFAULT_STATUSBAR_HEIGHT,
+    }) || DEFAULT_STATUSBAR_HEIGHT
+  );
 };
 
 export {
