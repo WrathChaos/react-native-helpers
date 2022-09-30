@@ -13,22 +13,10 @@ import {
 } from "./helpers/device/DeviceInfo";
 
 import {
-  isIPhoneNotchFamily,
-  isIPhoneXFamily,
-  hasNotch,
-  isIPhoneX,
-  isIPhoneXr,
-  isIPhoneXs,
-  isIPhoneSE,
-  isIPhoneXsMax,
   getStatusBarHeight,
-  isIPhone11,
-  isIPhone11Pro,
-  isIPhone11ProMax,
-  isIPhone12,
-  isIPhone12Pro,
-  isIPhone12ProMax,
-  isIPhone12Mini,
+  hasNotch,
+  hasNotchOnly,
+  hasDynamicIsland,
 } from "./helpers/notch/Notch";
 import normalizeText from "./helpers/normalize/normalizeText";
 
@@ -48,20 +36,8 @@ export {
   PlatformVersion,
   getStatusBarHeight,
   hasNotch,
-  isIPhoneNotchFamily,
-  isIPhoneXFamily,
-  isIPhoneSE,
-  isIPhoneX,
-  isIPhoneXr,
-  isIPhoneXs,
-  isIPhoneXsMax,
-  isIPhone11,
-  isIPhone11Pro,
-  isIPhone11ProMax,
-  isIPhone12,
-  isIPhone12Pro,
-  isIPhone12ProMax,
-  isIPhone12Mini,
+  hasNotchOnly,
+  hasDynamicIsland,
   numberFormat,
   normalizeText,
 };
