@@ -50,27 +50,23 @@ import {
 
 ```js
 import {
-  isIPhoneNotchFamily,
-  isIPhone11,
-  isIPhone12,
-  isIPhone12Mini,
-  isIPhone12ProMax,
+  getStatusBarHeight,
   hasNotch,
-  isIPhoneX,
-  isIPhoneXr,
-  isIPhoneXs,
-  isIPhoneXsMax,
+  hasNotchOnly,
+  hasDynamicIsland,
   getStatusBarHeight,
 } from "@freakycoder/react-native-helpers";
 
 <View>
   <Container
     title="hasNotch?"
-    subtitle={hasNotch() ? "iPhone X Family" : "iPhone Family"}
+    subtitle={hasNotch() ? "Has Notch" : "NOT notch"}
   />
   <Container
-    title="isIPhoneXsMax?"
-    subtitle={isIPhoneXsMax(Screen) ? "iPhone XsMax" : "NOT iPhone XsMax"}
+    title="hasDynamicIsland?"
+    subtitle={
+      hasDynamicIsland(Screen) ? "Has Dynamic Island" : "NOT Dynamic Island"
+    }
   />
   <Container title="getStatusBarHeight?" subtitle={getStatusBarHeight()} />
 </View>;
@@ -122,23 +118,14 @@ import { numberFormat } from "@freakycoder/react-native-helpers";
 
 ## DeviceInfo Props
 
-| Property            |     Type      | Description                                                                                         |
-| ------------------- | :-----------: | --------------------------------------------------------------------------------------------------- |
-| hasNotch            |   function    | returns if the device has notch or not                                                              |
-| isIPhoneNotchFamily |   function    | returns if it the iPhone has in the notch family (iPhone X, 11, 12 Series)                          |
-| isIPhoneXFamily     |   function    | returns if it the iPhone has in the notch family (iPhone X, 11, 12 Series) (Backward compatibility) |
-| isIPhoneSE          | function(dim) | returns if device is iPhone SE or not                                                               |
-| isIPhoneX           | function(dim) | returns if device is iPhone X or not                                                                |
-| isIPhoneXr          | function(dim) | returns if device is iPhone Xr or not                                                               |
-| isIPhoneXs          | function(dim) | returns if device is iPhone Xs or not                                                               |
-| isIPhoneXsMax       | function(dim) | returns if device is iPhone Xs Max or not                                                           |
-| isIPhone11          | function(dim) | returns if device is iPhone 11 or not                                                               |
-| isIPhone11Pro       | function(dim) | returns if device is iPhone 11 Pro or not                                                           |
-| isIPhone11ProMax    | function(dim) | returns if device is iPhone 11 Pro Max or not                                                       |
-| isIPhone12          | function(dim) | returns if device is iPhone 12 or not                                                               |
-| isIPhone12Pro       | function(dim) | returns if device is iPhone 12 Pro or not                                                           |
-| isIPhone12ProMax    | function(dim) | returns if device is iPhone 12 Pro Max or not                                                       |
-| isIPhone12Mini      | function(dim) | returns if device is iPhone 12 Mini or not                                                          |
+getStatusBarHeight, hasNotch, hasNotchOnly, hasDynamicIsland
+
+| Property           |   Type   | Description                                                                               |
+| ------------------ | :------: | ----------------------------------------------------------------------------------------- |
+| hasNotch           | function | returns if the device has notch (returns true for dynamic island!)                        |
+| hasNotchOnly       | function | returns if the device has notch only, it does not detect if the device has dynamic island |
+| hasDynamicIsland   | function | returns if the device has dynamic island                                                  |
+| getStatusBarHeight |  number  | returns status bar height of the device                                                   |
 
 ## Normalize Text Props
 
@@ -157,36 +144,9 @@ import { numberFormat } from "@freakycoder/react-native-helpers";
 - [x] ~~LICENSE~~
 - [x] ~~Typescript~~
 - [x] ~~iPhone Series Support~~
+- [x] ~~Dynamic Island~~
 - [ ] More custom text helpers
 - [ ] Write an article about the lib on Medium
-
-# Changelog
-
-## [1.0.0](https://github.com/WrathChaos/react-native-helpers/tree/1.0.0) (2020-10-31)
-
-## ⚠️ Breaking Change ⚠️
-
-- `isIPhoneXFamily` is renamed to `isIPhoneNotchFamily`
-
-[Full Changelog](https://github.com/WrathChaos/react-native-helpers/compare/0.1.3...1.0.0)
-
-## [0.1.3](https://github.com/WrathChaos/react-native-helpers/tree/0.1.3) (2020-03-15)
-
-[Full Changelog](https://github.com/WrathChaos/react-native-helpers/compare/0.1.2...0.1.3)
-
-## [0.1.2](https://github.com/WrathChaos/react-native-helpers/tree/0.1.2) (2019-12-16)
-
-[Full Changelog](https://github.com/WrathChaos/react-native-helpers/compare/0.1.1...0.1.2)
-
-## [0.1.1](https://github.com/WrathChaos/react-native-helpers/tree/0.1.1) (2019-12-16)
-
-[Full Changelog](https://github.com/WrathChaos/react-native-helpers/compare/0.0.2...0.1.1)
-
-## [0.0.2](https://github.com/WrathChaos/react-native-helpers/tree/0.0.2) (2019-07-05)
-
-[Full Changelog](https://github.com/WrathChaos/react-native-helpers/compare/0ec4a22f68b857dfbd311d9b9dd1f9e3926bd1c3...0.0.2)
-
-\* _This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)_
 
 ## Author
 
