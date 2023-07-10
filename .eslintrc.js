@@ -4,7 +4,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "@react-native-community",
     "prettier",
   ],
   ignorePatterns: [
@@ -18,15 +17,14 @@ module.exports = {
   ],
   parser: "@typescript-eslint/parser",
   plugins: [
-    "import",
     "react",
     "react-native",
     "prettier",
     "react-hooks",
+    "jest",
     "@typescript-eslint",
     "promise",
-    "jest",2
-    "unused-imports",
+    "unused-imports"
   ],
   env: {
     browser: true,

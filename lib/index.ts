@@ -1,6 +1,12 @@
 import {
   isIOS,
   isAndroid,
+  ScreenMin,
+  ScreenMax,
+  vh,
+  vw,
+  vmin,
+  vmax,
   ScreenWidth,
   ScreenHeight,
   ScreenScale,
@@ -23,6 +29,12 @@ import normalizeText from "./helpers/normalize/normalizeText";
 import { numberFormat } from "./helpers/text/Text";
 
 export {
+  vh,
+  vw,
+  vmin,
+  vmax,
+  ScreenMin,
+  ScreenMax,
   isIOS,
   isAndroid,
   ScreenWidth,

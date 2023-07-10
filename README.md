@@ -102,26 +102,32 @@ import { numberFormat } from "@freakycoder/react-native-helpers";
 
 ## DeviceInfo Props
 
-| Property        |  Type   | Description                                                                                |
-| --------------- | :-----: | ------------------------------------------------------------------------------------------ |
-| isIOS           | boolean | returns if it is an iOS device or not                                                      |
-| isAndroid       | boolean | returns if it is an Android device or not                                                  |
-| ScreenWidth     | number  | get the device's screen width                                                              |
-| ScreenHeight    | number  | get the device's screen height                                                             |
-| ScreenScale     | number  | get the device's screen scale ratio                                                        |
-| ScreenFontScale | number  | get the device's screen font scale ratio (depends on the user's device font scale setting) |
-| WindowWidth     | number  | get the device's window width                                                              |
-| WindowHeight    | number  | get the device's window height                                                             |
-| WindowScale     | number  | get the device's window scale ratio                                                        |
-| WindowFontScale | number  | get the device's window font scale ratio (depends on the user's device font scale setting) |
-| PlatformVersion | number  | returns the platform version                                                               |
+| Property        |  Type   | Description                                                                                                                |
+|-----------------|:-------:|----------------------------------------------------------------------------------------------------------------------------|
+| isIOS           | boolean | returns if it is an iOS device or not                                                                                      |
+| isAndroid       | boolean | returns if it is an Android device or not                                                                                  |
+| ScreenWidth     | number  | get the device's screen width                                                                                              |
+| ScreenHeight    | number  | get the device's screen height                                                                                             |
+| ScreenScale     | number  | get the device's screen scale ratio                                                                                        |
+| ScreenFontScale | number  | get the device's screen font scale ratio (depends on the user's device font scale setting)                                 |
+| WindowWidth     | number  | get the device's window width                                                                                              |
+| WindowHeight    | number  | get the device's window height                                                                                             |
+| WindowScale     | number  | get the device's window scale ratio                                                                                        |
+| WindowFontScale | number  | get the device's window font scale ratio (depends on the user's device font scale setting)                                 |
+| PlatformVersion | number  | returns the platform version                                                                                               |
+| ScreenMin       | number  | get the device's screen width/height which are **minimum** depend on the landscape or portrait mode                        |
+| ScreenMax       | number  | get the device's screen width/height which are **maximum** depend on the landscape or portrait mode                        |
+| vh              | number  | get the device's height but as a **viewport unit**                                                                         |
+| vw              | number  | get the device's width but as a **viewport unit**                                                                          |
+| vmin            | number  | get the device's screen width/height as a **viewport unit** which are **minimum** depend on the landscape or portrait mode |
+| vmax            | number  | get the device's screen width/height as a **viewport unit** which are **maximum** depend on the landscape or portrait mode |
 
 ## DeviceInfo Props
 
 getStatusBarHeight, hasNotch, hasNotchOnly, hasDynamicIsland
 
 | Property           |   Type   | Description                                                                               |
-| ------------------ | :------: | ----------------------------------------------------------------------------------------- |
+|--------------------|:--------:|-------------------------------------------------------------------------------------------|
 | hasNotch           | function | returns if the device has notch (returns true for dynamic island!)                        |
 | hasNotchOnly       | function | returns if the device has notch only, it does not detect if the device has dynamic island |
 | hasDynamicIsland   | function | returns if the device has dynamic island                                                  |
@@ -130,13 +136,13 @@ getStatusBarHeight, hasNotch, hasNotchOnly, hasDynamicIsland
 ## Normalize Text Props
 
 | Property  |       Type       | Description                      |
-| --------- | :--------------: | -------------------------------- |
+|-----------|:----------------:|----------------------------------|
 | normalize | function(number) | returns the normalized font size |
 
 ## Custom Text Props
 
 | Property     |               Type               | Description                                                 |
-| ------------ | :------------------------------: | ----------------------------------------------------------- |
+|--------------|:--------------------------------:|-------------------------------------------------------------|
 | numberFormat | function(value, locale, options) | returns the number formatted font with its given parameters |
 
 ### Roadmap

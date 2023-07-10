@@ -15,7 +15,29 @@ const isIOS: boolean = Platform.OS === "ios";
 const isAndroid: boolean = Platform.OS === "android";
 const PlatformVersion = Platform.Version;
 
+/**
+ * @description
+ * These are the dynamic calculation for the app is on the landscape or portrait mode.
+ */
+const ScreenMin = Math.min(ScreenWidth, ScreenHeight) || ScreenHeight;
+const ScreenMax = Math.max(ScreenWidth, ScreenHeight) || ScreenWidth;
+
+/**
+ * @description
+ * These are the viewport units for the web or mobile web who wants to use viewport units.
+ */
+const vh = ScreenHeight / 100;
+const vw = ScreenWidth / 100;
+const vmin = Math.min(vh, vw) || vh;
+const vmax = Math.max(vh, vw) || vw;
+
 export {
+  vh,
+  vw,
+  vmin,
+  vmax,
+  ScreenMin,
+  ScreenMax,
   isIOS,
   isAndroid,
   ScreenWidth,

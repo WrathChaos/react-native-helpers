@@ -1,6 +1,6 @@
 {
   "name": "@freakycoder/react-native-helpers",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "All helpers in one; iPhone series support, dimensions helper, hasNotch helper, normalize text helper and text helpers for React Native with very easy use",
   "keywords": [
     "ios",
@@ -33,7 +33,6 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
-    "@react-native-community/eslint-config": "^2.0.0",
     "@types/react": "^16.9.53",
     "@types/react-native": "^0.63.25",
     "cpx": "^1.5.0",
