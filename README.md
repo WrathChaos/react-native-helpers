@@ -46,7 +46,7 @@ import {
 </View>;
 ```
 
-## Notch (iPhoneX & iPhone 11 & iPhone 12 & iPhone SE & StatusBar) Usage
+## Notch & DynamicIsland Usage
 
 ```js
 import {
