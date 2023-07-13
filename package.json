@@ -31,7 +31,7 @@
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
+    "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^15.0.0",
     "@types/react": "^16.9.53",
     "@types/react-native": "^0.72.2",
