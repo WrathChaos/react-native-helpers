@@ -121,6 +121,7 @@ import { numberFormat } from "@freakycoder/react-native-helpers";
 | vw              | number  | get the device's width but as a **viewport unit**                                                                          |
 | vmin            | number  | get the device's screen width/height as a **viewport unit** which are **minimum** depend on the landscape or portrait mode |
 | vmax            | number  | get the device's screen width/height as a **viewport unit** which are **maximum** depend on the landscape or portrait mode |
+| deviceLanguage  | string  | get the device's language (en_US)                                                                                          |
 
 ## DeviceInfo Props
 

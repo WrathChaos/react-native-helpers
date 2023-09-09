@@ -1,4 +1,12 @@
-import { Platform, Dimensions } from "react-native";
+import { Platform, Dimensions, NativeModules } from "react-native";
+
+// i.e: en_US
+const deviceLanguage =
+  Platform.OS === "ios"
+    ? NativeModules.SettingsManager.settings.AppleLocale ||
+      NativeModules.SettingsManager.settings.AppleLanguages[0] //iOS 13
+    : NativeModules.I18nManager.localeIdentifier;
+
 // ? Screen Constants
 const Screen = Dimensions.get("screen");
 const ScreenWidth: number = Screen.width;
@@ -49,4 +57,5 @@ export {
   WindowScale,
   WindowFontScale,
   PlatformVersion,
+  deviceLanguage,
 };
