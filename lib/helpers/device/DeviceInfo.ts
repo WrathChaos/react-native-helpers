@@ -1,7 +1,7 @@
 import { Platform, Dimensions, NativeModules } from "react-native";
 
 // i.e: en_US
-const deviceLanguage =
+const getDeviceLanguage =
   Platform.OS === "ios"
     ? NativeModules.SettingsManager.settings.AppleLocale ||
       NativeModules.SettingsManager.settings.AppleLanguages[0] //iOS 13
@@ -57,5 +57,5 @@ export {
   WindowScale,
   WindowFontScale,
   PlatformVersion,
-  deviceLanguage,
+  getDeviceLanguage,
 };

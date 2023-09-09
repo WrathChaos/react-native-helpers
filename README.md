@@ -102,26 +102,26 @@ import { numberFormat } from "@freakycoder/react-native-helpers";
 
 ## DeviceInfo Props
 
-| Property        |  Type   | Description                                                                                                                |
-|-----------------|:-------:|----------------------------------------------------------------------------------------------------------------------------|
-| isIOS           | boolean | returns if it is an iOS device or not                                                                                      |
-| isAndroid       | boolean | returns if it is an Android device or not                                                                                  |
-| ScreenWidth     | number  | get the device's screen width                                                                                              |
-| ScreenHeight    | number  | get the device's screen height                                                                                             |
-| ScreenScale     | number  | get the device's screen scale ratio                                                                                        |
-| ScreenFontScale | number  | get the device's screen font scale ratio (depends on the user's device font scale setting)                                 |
-| WindowWidth     | number  | get the device's window width                                                                                              |
-| WindowHeight    | number  | get the device's window height                                                                                             |
-| WindowScale     | number  | get the device's window scale ratio                                                                                        |
-| WindowFontScale | number  | get the device's window font scale ratio (depends on the user's device font scale setting)                                 |
-| PlatformVersion | number  | returns the platform version                                                                                               |
-| ScreenMin       | number  | get the device's screen width/height which are **minimum** depend on the landscape or portrait mode                        |
-| ScreenMax       | number  | get the device's screen width/height which are **maximum** depend on the landscape or portrait mode                        |
-| vh              | number  | get the device's height but as a **viewport unit**                                                                         |
-| vw              | number  | get the device's width but as a **viewport unit**                                                                          |
-| vmin            | number  | get the device's screen width/height as a **viewport unit** which are **minimum** depend on the landscape or portrait mode |
-| vmax            | number  | get the device's screen width/height as a **viewport unit** which are **maximum** depend on the landscape or portrait mode |
-| deviceLanguage  | string  | get the device's language (en_US)                                                                                          |
+| Property          |  Type   | Description                                                                                                                |
+|-------------------|:-------:|----------------------------------------------------------------------------------------------------------------------------|
+| isIOS             | boolean | returns if it is an iOS device or not                                                                                      |
+| isAndroid         | boolean | returns if it is an Android device or not                                                                                  |
+| ScreenWidth       | number  | get the device's screen width                                                                                              |
+| ScreenHeight      | number  | get the device's screen height                                                                                             |
+| ScreenScale       | number  | get the device's screen scale ratio                                                                                        |
+| ScreenFontScale   | number  | get the device's screen font scale ratio (depends on the user's device font scale setting)                                 |
+| WindowWidth       | number  | get the device's window width                                                                                              |
+| WindowHeight      | number  | get the device's window height                                                                                             |
+| WindowScale       | number  | get the device's window scale ratio                                                                                        |
+| WindowFontScale   | number  | get the device's window font scale ratio (depends on the user's device font scale setting)                                 |
+| PlatformVersion   | number  | returns the platform version                                                                                               |
+| ScreenMin         | number  | get the device's screen width/height which are **minimum** depend on the landscape or portrait mode                        |
+| ScreenMax         | number  | get the device's screen width/height which are **maximum** depend on the landscape or portrait mode                        |
+| vh                | number  | get the device's height but as a **viewport unit**                                                                         |
+| vw                | number  | get the device's width but as a **viewport unit**                                                                          |
+| vmin              | number  | get the device's screen width/height as a **viewport unit** which are **minimum** depend on the landscape or portrait mode |
+| vmax              | number  | get the device's screen width/height as a **viewport unit** which are **maximum** depend on the landscape or portrait mode |
+| getDeviceLanguage | string  | get the device's language (en_US)                                                                                          |
 
 ## DeviceInfo Props
 

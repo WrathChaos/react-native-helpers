@@ -16,7 +16,7 @@ import {
   WindowScale,
   WindowFontScale,
   PlatformVersion,
-  deviceLanguage,
+  getDeviceLanguage,
 } from "./helpers/device/DeviceInfo";
 
 import {
@@ -47,7 +47,7 @@ export {
   WindowScale,
   WindowFontScale,
   PlatformVersion,
-  deviceLanguage,
+  getDeviceLanguage,
   getStatusBarHeight,
   hasNotch,
   hasNotchOnly,
