@@ -27,15 +27,15 @@ const PlatformVersion = Platform.Version;
  * @description
  * These are the dynamic calculation for the app is on the landscape or portrait mode.
  */
-const ScreenMin = Math.min(ScreenWidth, ScreenHeight) || ScreenHeight;
-const ScreenMax = Math.max(ScreenWidth, ScreenHeight) || ScreenWidth;
+const ScreenMin = Math.min(WindowWidth, WindowHeight) || WindowHeight;
+const ScreenMax = Math.max(WindowWidth, WindowHeight) || WindowWidth;
 
 /**
  * @description
  * These are the viewport units for the web or mobile web who wants to use viewport units.
  */
-const vh = ScreenHeight / 100;
-const vw = ScreenWidth / 100;
+const vh = WindowHeight / 100;
+const vw = WindowWidth / 100;
 const vmin = Math.min(vh, vw) || vh;
 const vmax = Math.max(vh, vw) || vw;
 

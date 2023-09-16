@@ -152,6 +152,7 @@ getStatusBarHeight, hasNotch, hasNotchOnly, hasDynamicIsland
 - [x] ~~Typescript~~
 - [x] ~~iPhone Series Support~~
 - [x] ~~Dynamic Island~~
+- [ ] Separate the style helpers from device
 - [ ] More custom text helpers
 - [ ] Write an article about the lib on Medium
 
