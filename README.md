@@ -24,13 +24,9 @@ Add the dependency:
 npm i @freakycoder/react-native-helpers
 ```
 
-## Peer Dependencies
-
-<b><i>Zero Dependency</i></b>
-
 ## DeviceInfo Usage
 
-```jsx
+```tsx
 import {
   Screen,
   ScreenWidth,
@@ -48,7 +44,7 @@ import {
 
 ## Notch & DynamicIsland Usage
 
-```js
+```ts
 import {
   getStatusBarHeight,
   hasNotch,
@@ -72,11 +68,21 @@ import {
 </View>;
 ```
 
+## Open Applications or Stores by Linking
+
+```ts
+import { openAppInPlayStore, openAppInAppStore, openExternalApp } from "@freakycoder/react-native-helpers";
+
+openAppInPlayStore('com.example.android');
+openAppInAppStore('123456789');
+openExternalApp('com.example.android', '123456789');
+```
+
 ## Normalize Text Usage
 
 Method to normalize size of fonts across devices
 
-```js
+```ts
 import { normalizeText } from "@freakycoder/react-native-helpers";
 
 fontSize: normalizeText(24),
@@ -86,7 +92,7 @@ fontSize: normalizeText(24),
 
 Method to format the number of your texted number. You can change each options.
 
-```js
+```ts
 import { numberFormat } from "@freakycoder/react-native-helpers";
 
 <Text>{numberFormat(50319341)</Text> // Output: 50.319.341
