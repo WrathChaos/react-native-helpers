@@ -27,6 +27,12 @@ import {
 } from "./helpers/notch/Notch";
 import normalizeText from "./helpers/normalize/normalizeText";
 
+import {
+  openExternalApp,
+  openAppInAppStore,
+  openAppInPlayStore,
+} from "./utils";
+
 import { numberFormat } from "./helpers/text/Text";
 
 export {
@@ -54,4 +60,7 @@ export {
   hasDynamicIsland,
   numberFormat,
   normalizeText,
+  openExternalApp,
+  openAppInAppStore,
+  openAppInPlayStore,
 };

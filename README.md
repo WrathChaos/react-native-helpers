@@ -134,6 +134,15 @@ getStatusBarHeight, hasNotch, hasNotchOnly, hasDynamicIsland
 | hasDynamicIsland   | function | returns if the device has dynamic island                                                  |
 | getStatusBarHeight |  number  | returns status bar height of the device                                                   |
 
+## Utils Props
+
+| Property           |                 Type                 | Description                                            |
+|--------------------|:------------------------------------:|--------------------------------------------------------|
+| openAppInPlayStore |       function(appPackageName)       | opens the app on android or Google Play                |
+| openAppInAppStore  |         function(appStoreId)         | opens the app on ios or App Store                      |
+| openExternalApp    | function(appPackageName, appStoreId) | opens the app on ios or android - handles the platform |
+
+
 ## Normalize Text Props
 
 | Property  |       Type       | Description                      |
