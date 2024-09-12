@@ -1,11 +1,17 @@
 import { Platform, Dimensions, NativeModules } from "react-native";
 
 // i.e: en_US
-const getDeviceLanguage =
-  Platform.OS === "ios"
-    ? NativeModules.SettingsManager.settings.AppleLocale ||
-      NativeModules.SettingsManager.settings.AppleLanguages[0] //iOS 13
-    : NativeModules.I18nManager.localeIdentifier;
+const getDeviceLanguage = () => {
+  if (Platform.OS === "ios") {
+    const settings = NativeModules.SettingsManager?.settings;
+    const language = settings?.AppleLocale || settings?.AppleLanguages?.[0]; // iOS 13 and above
+    return language ? language.replace("_", "-") : "en_US";
+  } else if (Platform.OS === "android") {
+    const locale = NativeModules.I18nManager?.localeIdentifier;
+    return locale ? locale.replace("_", "-") : "en_US";
+  }
+  return "en_US";
+};
 
 // ? Screen Constants
 const Screen = Dimensions.get("screen");
