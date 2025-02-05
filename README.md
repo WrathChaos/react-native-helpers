@@ -33,12 +33,14 @@ import {
   ScreenHeight,
   isIOS,
   isAndroid,
+  isTablet
 } from "@freakycoder/react-native-helpers";
 
 <View>
   <Container title="Device OS" subtitle={isIOS ? "iOS" : "Android"} />
   <Container title="Screen Height" subtitle={ScreenHeight} />
   <Container title="Screen Width" subtitle={ScreenWidth} />
+  <Container title="Tablet?: " subtitle={isTablet ? "Tablet" : "Phone"} />
 </View>;
 ```
 
@@ -112,6 +114,7 @@ import { numberFormat } from "@freakycoder/react-native-helpers";
 |-------------------|:-------:|----------------------------------------------------------------------------------------------------------------------------|
 | isIOS             | boolean | returns if it is an iOS device or not                                                                                      |
 | isAndroid         | boolean | returns if it is an Android device or not                                                                                  |
+| isTablet          | boolean | returns if it is a tablet or phone                                                                                         |
 | ScreenWidth       | number  | get the device's screen width                                                                                              |
 | ScreenHeight      | number  | get the device's screen height                                                                                             |
 | ScreenScale       | number  | get the device's screen scale ratio                                                                                        |
