@@ -45,6 +45,26 @@ const vw = WindowWidth / 100;
 const vmin = Math.min(vh, vw) || vh;
 const vmax = Math.max(vh, vw) || vw;
 
+/**
+ * Determines if the current device is a tablet.
+ * Uses a singleton approach to avoid re-evaluating each time.
+ */
+const determineIsTablet = (): boolean => {
+  const { width, height } = Dimensions.get("window");
+  const aspectRatio = height / width;
+
+  const minTabletWidth = 600; // dp
+  const maxPhoneAspectRatio = 1.6; // Typical phone aspect ratio
+
+  return (
+    (isAndroid || isIOS) &&
+    (width >= minTabletWidth || aspectRatio <= maxPhoneAspectRatio)
+  );
+};
+
+// Singleton value to prevent recalculating multiple times
+const isTablet: boolean = determineIsTablet();
+
 export {
   vh,
   vw,
@@ -63,5 +83,6 @@ export {
   WindowScale,
   WindowFontScale,
   PlatformVersion,
+  isTablet,
   getDeviceLanguage,
 };
