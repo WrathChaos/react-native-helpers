@@ -32,8 +32,8 @@
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^18.4.3",
-    "@types/react": "^18.2.15",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@types/react": "^19.0.6",
     "@types/react-native": "^0.73.0",
     "cpx": "^1.5.0",
     "eslint": "^9.2.0",
@@ -44,7 +44,7 @@
     "prettier": "^3.0.0",
     "prettier-format": "^4.0.0",
     "react-native-typescript-transformer": "^1.2.13",
-    "semantic-release": "^23.0.0",
+    "semantic-release": "^24.1.1",
     "typescript": "^5.1.6"
   },
   "scripts": {
