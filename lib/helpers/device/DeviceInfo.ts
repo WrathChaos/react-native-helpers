@@ -50,15 +50,17 @@ const vmax = Math.max(vh, vw) || vw;
  * Uses a singleton approach to avoid re-evaluating each time.
  */
 const determineIsTablet = (): boolean => {
-  const { width, height } = Dimensions.get("window");
-  const aspectRatio = height / width;
+  const { width, height } = Dimensions.get("screen");
+  const minDimension = Math.min(width, height);
+  const maxDimension = Math.max(width, height);
 
+  const aspectRatio = maxDimension / minDimension;
   const minTabletWidth = 600; // dp
   const maxPhoneAspectRatio = 1.6; // Typical phone aspect ratio
 
   return (
     (isAndroid || isIOS) &&
-    (width >= minTabletWidth || aspectRatio <= maxPhoneAspectRatio)
+    (minDimension >= minTabletWidth || aspectRatio <= maxPhoneAspectRatio)
   );
 };
 
